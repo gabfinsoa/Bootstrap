@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./assets/bootstrap/dist/css/bootstrap.min.css">
+    <title>Old Car - Your New Car</title>
+</head>
+<body>
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #070a0c;"> -->
+    <nav class="navbar navbar-fixed-top navbar-expand-lg navbar-dark bg-dark" >        
+        <div class="container">
+            <!-- <a class="navbar-brand h1 mb-0" href="#" style="color: #ffffff;">Old Car</a> -->
+
+            <a class="navbar-brand h1 mb-0" href="index.html" style="color: #ffffff;">
+                <img src="./assets/img/direcao.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+                Old Car
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Mantem a margem a direita / Criacao do Menu fixo -->
+            <div class="collapse navbar-collapse" id="navbarSite">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color: #ffffff;">Home</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="prontos.html" style="color: #ffffff;">Prontos</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#" style="color: #ffffff;">Restauração</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="encomendas.html" style="color: #ffffff;">Encomendas</a>
+                    </li>
+                </ul>
+
+                <!-- Mantem a margem a esquerda / Criacao do Menu Dropdown -->
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="nav-drop">Sobre Nós</a>
+                    
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Empresa</a>
+                            <a class="dropdown-item" href="#">Contato</a>
+                            <a class="dropdown-item" href="#">Localizacao</a>
+                            <a class="dropdown-item" href="contrato.html">Contrato</a>
+                        </div>
+                    </li>
+                </ul>
+
+                <!-- Caixa de Pesquisa e botão Buscar -->
+                <form class="form-inline">
+                    <!-- Add margens esq. e dir. ao lado da busca -->
+                    <input type="search" class="form-control ml-2 mr-2" placeholder="Pesquise aqui...">
+                    <button class="btn btn-dark" type="submit">Buscar</button>
+                </form>
+
+            </div>
+        </div>
+    </nav>   
+
+    <!-- Desenvolvimento do Carousel -->
+    <div id="carouselSite" class="carousel slide container" data-ride="carousel">
+
+        <!-- Adicionando as "miniaturas" -->
+        <ol class="carousel-indicators">
+            <!-- A primeira miniatura deve possuir a class -> active -->
+            <li data-target="#carouselSite" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselSite" data-slide-to="1"></li>
+            <li data-target="#carouselSite" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Adicionando as imagens -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <!-- Imagens -->
+                <!-- img-fluid -> Imagem ocupar todo o espaco -->
+                <!-- d-block -> Imagem aparecer em todas as resolucoes de tela -->
+                <img src="./assets/img/carro_solo_carousel - Copia.jpg" class="img-fluid d-block" alt="gabriel">
+                <!-- Não exibir o label nos tamanhos MD pra baixo -->
+                <div class="carousel-caption d-none d-md-block">
+                    <h2 style="text-align: center; color: rgba(255, 255, 255, 0.849);">Landau</h2>
+                    <p class="h3" style="text-align: left; color: rgba(255, 255, 255, 0.849);">Galaxie 500 foi o primeiro carro de passeio fabricado pela Ford no Brasil</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <!-- Imagens -->
+                <!-- img-fluid -> Imagem ocupar todo o espaco -->
+                <!-- d-block -> Imagem aparecer em todas as resolucoes de tela -->
+                <img src="./assets/img/carro_dupla_carousel - Copia.jpg" class="img-fluid d-block" alt="">
+                <!-- Não exibir o label nos tamanhos MD pra baixo -->
+                <div class="carousel-caption d-none d-md-block">
+                    <h2 style="text-align: right; color: rgba(255, 255, 255, 0.849);">AERO WILLYS</h2>
+                    <p class="h3" style="text-align: right; color: rgba(255, 255, 255, 0.849);">Galaxie 500 foi o primeiro carro de passeio fabricado pela Ford no Brasil</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <!-- Imagens -->
+                <!-- img-fluid -> Imagem ocupar todo o espaco -->
+                <!-- d-block -> Imagem aparecer em todas as resolucoes de tela -->
+                <img src="./assets/img/maverick_carousel - Copia.jpg" class="img-fluid d-block" alt="">
+                <!-- Não exibir o label nos tamanhos MD pra baixo -->
+                <div class="carousel-caption d-none d-md-block">
+                    <h2 style="text-align: left; color: rgba(255, 255, 255, 0.849);">MAVERICK</h2>
+                    <p class="h3" style="text-align: left; color: rgba(255, 255, 255, 0.849);">Galaxie 500 foi o primeiro carro de passeio fabricado pela Ford no Brasil</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controles do Carousel -->
+        <!-- Passar imagem para tras -->
+        <a class="carousel-control-prev" href="#carouselSite" role="button" data-slide="prev">
+            <!-- Icone para retroceder -->
+            <span class="carousel-control-prev-icon"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <!-- Passar imagem para frente -->
+        <a class="carousel-control-next" href="#carouselSite" role="button" data-slide="next">
+            <!-- Icone para retroceder -->
+            <span class="carousel-control-next-icon"></span>
+            <span class="sr-only">Proximo</span>
+        </a>
+
+    </div>
+
+    <h1>Teste Web</h1>
+    <h1>BBBBBBB</h1>
+    <h1>CCCCCCC</h1>
+    <h1>DDDDDDD</h1>
+    <h1>EEEEEEE</h1>
+    <h1>FFFFFFF</h1>
+    <h1>GGGGGGG</h1>
+    <h1>HHHHHHH</h1>
+    <h1>Teste Web</h1>
+    <h1>BBBBBBB</h1>
+    <h1>CCCCCCC</h1>
+    <h1>DDDDDDD</h1>
+    <h1>EEEEEEE</h1>
+    <h1>FFFFFFF</h1>
+    <h1>GGGGGGG</h1>
+    <h1>HHHHHHH</h1>
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    <script src="./bundle.js"></script>
+</body>
+</html>
